@@ -26,8 +26,31 @@ body {
 
 #navbar {
     border-bottom: 10px solid;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+ 
   
 }
+
+#ul-container {
+    height: 50px;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#ul-container > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+}
+
 
 #maincontent {
     flex: 1;
@@ -35,5 +58,5 @@ body {
 }
 
 #footer {
-    height: 100px;
+    height: 50px;
 }
