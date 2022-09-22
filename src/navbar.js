@@ -33,15 +33,35 @@ export default function navbaro() {
     
     //frontpage
     const frontLI = document.createElement('li');
-    const ahFront = document.createElement('a')
+    const frontPageImg = document.createElement('img');
+    const frontpageP = document.createElement('p');
+    frontpageP.textContent = "Frontpage"
+    frontPageImg.setAttribute('class','icon');
+    frontPageImg.src = home1;
+    frontLI.appendChild(frontPageImg);
+    frontLI.appendChild(frontpageP);
     
         //menu
     const menuLI = document.createElement('li');
-   
+    menuLI.setAttribute('id','menulle');
+    const menuImg = document.createElement('img');
+    const menuP = document.createElement('p');
+    menuP.textContent = "menu!";
+    menuImg.src = menu1;
+    menuImg.setAttribute('class','icon');
+    menuLI.appendChild(menuImg);
+    menuLI.appendChild(menuP);
+      
 
         //contacts
     const contactLI = document.createElement('li');
-    const contactButton = document.createElement('button');
+    const contactImg = document.createElement('img');
+    const contactP = document.createElement('p');
+    contactP.textContent = "contact us"
+    contactImg.src = contact1;
+    contactImg.setAttribute('class','icon');
+    contactLI.appendChild(contactImg);
+    contactLI.appendChild(contactP);
    
 
     //appends to list

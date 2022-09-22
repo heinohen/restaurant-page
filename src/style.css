@@ -43,6 +43,11 @@ body {
     list-style: none;
 }
 
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
 
 /* main area */
 #maincontent {
@@ -54,6 +59,10 @@ body {
 /* footer */
 #footer {
     height: 50px;
-    text-align: center;
-    padding-top: 20px;;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
