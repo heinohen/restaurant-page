@@ -90,6 +90,20 @@ body {
 }
 
 
+/* Menu grid */
+
+.gridMenu {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+    background-color: aliceblue;
+    
+}
+
+#menu-item {
+    color: rebeccapurple;
+}
+
+
 /* footer */
 #footer {
     height: 50px;
