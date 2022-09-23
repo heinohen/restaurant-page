@@ -2,7 +2,7 @@ import home1 from "./images/home.png";
 import contact1 from "./images/contact.png";
 import menu1 from "./images/menu.png";
 
-export default function navbaro() {
+    function navbaro() {
     
     //declare variables for images
     const homeIcon = new Image();
@@ -38,8 +38,12 @@ export default function navbaro() {
     frontpageP.textContent = "Frontpage"
     frontPageImg.setAttribute('class','icon');
     frontPageImg.src = home1;
-    frontLI.appendChild(frontPageImg);
-    frontLI.appendChild(frontpageP);
+    const btnFront = document.createElement('button');
+    btnFront.setAttribute('class', 'btn');
+    btnFront.setAttribute('id','frontbutton');
+    btnFront.appendChild(frontPageImg);
+    btnFront.appendChild(frontpageP);
+    frontLI.appendChild(btnFront);
     
         //menu
     const menuLI = document.createElement('li');
@@ -49,8 +53,12 @@ export default function navbaro() {
     menuP.textContent = "menu!";
     menuImg.src = menu1;
     menuImg.setAttribute('class','icon');
-    menuLI.appendChild(menuImg);
-    menuLI.appendChild(menuP);
+    const btnMenu = document.createElement('button');
+    btnMenu.setAttribute('class', 'btn');
+    btnMenu.setAttribute('id', 'menubutton');
+    btnMenu.appendChild(menuImg);
+    btnMenu.appendChild(menuP);
+    menuLI.appendChild(btnMenu);
       
 
         //contacts
@@ -60,9 +68,13 @@ export default function navbaro() {
     contactP.textContent = "contact us"
     contactImg.src = contact1;
     contactImg.setAttribute('class','icon');
-    contactLI.appendChild(contactImg);
-    contactLI.appendChild(contactP);
-   
+    
+    const btnContact = document.createElement('button');
+    btnContact.setAttribute('class', 'btn');
+    btnContact.setAttribute('id','contactbutton');
+    btnContact.appendChild(contactImg);
+    btnContact.appendChild(contactP);
+    contactLI.appendChild(btnContact);
 
     //appends to list
     listNavBar.appendChild(frontLI);
@@ -77,6 +89,4 @@ export default function navbaro() {
     
 }
 
-
-
-
+export default navbaro;
