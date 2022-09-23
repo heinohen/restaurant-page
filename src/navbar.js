@@ -20,7 +20,7 @@ import menu1 from "./images/menu.png";
 
     //create header text
     const headerNavBar = document.createElement('h1');
-    headerNavBar.textContent = "{NAVBAR PLACEHOLDER}";
+    headerNavBar.textContent = "The Dark Restarr";
     navBarBlock.appendChild(headerNavBar)
 
     //create list from navigation items
@@ -35,7 +35,6 @@ import menu1 from "./images/menu.png";
     const frontLI = document.createElement('li');
     const frontPageImg = document.createElement('img');
     const frontpageP = document.createElement('p');
-    frontpageP.textContent = "Frontpage"
     frontPageImg.setAttribute('class','icon');
     frontPageImg.src = home1;
     const btnFront = document.createElement('button');
@@ -50,7 +49,6 @@ import menu1 from "./images/menu.png";
     menuLI.setAttribute('id','menulle');
     const menuImg = document.createElement('img');
     const menuP = document.createElement('p');
-    menuP.textContent = "menu!";
     menuImg.src = menu1;
     menuImg.setAttribute('class','icon');
     const btnMenu = document.createElement('button');
@@ -65,7 +63,6 @@ import menu1 from "./images/menu.png";
     const contactLI = document.createElement('li');
     const contactImg = document.createElement('img');
     const contactP = document.createElement('p');
-    contactP.textContent = "contact us"
     contactImg.src = contact1;
     contactImg.setAttribute('class','icon');
     
